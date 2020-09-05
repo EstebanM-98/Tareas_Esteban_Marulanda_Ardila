@@ -32,6 +32,8 @@ def Pascal(n):
     
     for i in range(0,n+1):
         l=[]
+        with open('Pascal-n.txt', 'a') as f:
+            f.write('n='+str(i))
         
         for k in range(0,s+1):
 
