@@ -1,4 +1,4 @@
-import funciones
+import funciones #Importando modulo ya creado.
 
 #4. a)
 
@@ -14,7 +14,7 @@ print('La probabilidad de que la moneda salga 10 veces cara en 100 lanzamientos 
 print('La probabilidad de sacar cara más de 30 veces es',1-2**30/2*100)
 
 numero=4  #Elegir un numero para generar el triángulo de Pascal
-Pascal(numero)
+funciones.Pascal(numero)  #Ver documento de txt creado en la misma carpeta
 
 
 
