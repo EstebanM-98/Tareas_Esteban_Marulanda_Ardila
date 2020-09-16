@@ -8,6 +8,7 @@ class VectorCartesiano:
         self.x=float(x0) #Atributo tipo float en x
         self.y=float(y0) #Atributo tipo float en y 
         self.z=float(z0) #Atributo tipo float en z
+        
         self.vector=[self.x,self.y,self.z]
         self.magnitud= (self.x**2+self.y**2+self.z**2)**0.5 #Atributo magnitud
     
@@ -33,11 +34,13 @@ class VectorCartesiano:
     
     
     def cart_sph(self):
+        
+        self.r_=(self.x**2 + self.y**2+ self.z**2)**0.5
+        self.theta=np.arccos(self.z/self.r_) 
+        self.phi=m.atan2(self.y,self.x)
       
-        r_ = (self.x**2 + self.y**2+ self.z**2)**0.5          # r
-        thet = np.arccos(z/r_)  #    theta
-        ph = np.arctan(self.y/self.x)                          # phi
-        return [r_, thet, ph]
+                                
+        print (f"[{self.r_ }, {self.theta} , {self.phi}]")
     
     
     def Print(self):
@@ -54,14 +57,10 @@ class VectorPolar(VectorCartesiano):
             self.r=float(r) #Atributo tipo float en x
             self.theta=float(theta) #Atributo tipo float en y 
             self.phi=float(phi) #Atributo tipo float en z
+            x_=self.r*np.sin(self.theta)*np.cos(self.phi)
+            y_=self.r*np.sin(self.theta)*np.sin(self.phi)
+            z_=self.r*np.cos(self.theta)
+            VectorCartesiano.__init__(self,x_,y_,z_)
             
-            VectorCartesiano.__init__(self,self.r*np.sin(self.theta)*np.cos(self.phi),self.r*np.sin(self.theta)*np.sin(self.phi),self.r*np.cos(self.theta))
+
             #Hereda VectorCartesiano
-    
-        
-        
-            
-
-        
-
-    
