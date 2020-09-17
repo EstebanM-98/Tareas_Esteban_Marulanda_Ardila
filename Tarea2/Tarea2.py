@@ -20,11 +20,11 @@ c=vector.VectorCartesiano(4.2,0.05,0)
 #Parte 1
 
 print('el vector a en esfericas  es:')
-a.cart_sph()
+a.cart_sph().Print()
 print('el vector b en esfericas es:')
-b.cart_sph()
+b.cart_sph().Print()
 print('el vector c en esfericas es:')
-c.cart_sph()
+c.cart_sph().Print()
 
 
 # In[3]:
