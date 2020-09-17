@@ -46,7 +46,7 @@ class VectorCartesiano:
         self.phi=m.atan2(self.y,self.x)
       
                                 
-        print (f"[{self.r_ }, {self.theta} , {self.phi}]")
+        return VectorCartesiano(self.r_ , self.theta , self.phi)
     
     
     def Print(self):
