@@ -61,7 +61,7 @@ class Oscilador:
     
     def plot_vel(self,color,ecuacion):
         
-        return plt.plot(self.t,self.vel,color,label=ecuacion)
+        return plt.plot(self.pos,self.vel,color,label=ecuacion)
 
     
     def plot_posA(self,color,ecuacion):
@@ -70,7 +70,7 @@ class Oscilador:
     
     def plot_velA(self,color,ecuacion):
         
-        return plt.plot(self.t,self.velA,color,label=ecuacion) 
+        return plt.plot(self.posA,self.velA,color,label=ecuacion) 
     
 
 class OsciladorAmortiguado(Oscilador):
