@@ -42,7 +42,7 @@ for i in range(0,5):
     plt.ylabel('$y(m)$',size=15)
     
 plt.title("Solución de la posición oscilador armonico",size=20) 
-
+plt.show()
 
 # En este gráfico se evidencia lo que ya se conoce respecto a un oscilador armonico, independientemente de su frecuencia o condiciones iniciales, la posición de este realiza un movimiento periodico con amplitud constante en el tiempo.
 
