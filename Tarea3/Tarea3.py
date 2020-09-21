@@ -42,7 +42,7 @@ for i in range(0,5):
     plt.ylabel('$y(m)$',size=15)
     
 plt.title("Solución de la posición oscilador armonico",size=20) 
-plt.show()
+
 
 # En este gráfico se evidencia lo que ya se conoce respecto a un oscilador armonico, independientemente de su frecuencia o condiciones iniciales, la posición de este realiza un movimiento periodico con amplitud constante en el tiempo.
 
@@ -117,7 +117,7 @@ for i in range(0,5):
     plt.ylabel('$V(m/s)$',size=15)
     
 plt.title("Espacio de fase del oscilador amortiguado",size=20)
-
+plt.show()
 
 # Como se discutio antes, el oscilador amortiguado tiene la caracteristica, de que su amplitud decrezca en el tiempo, en este gráfico del espacio de fase las trayectorias para los diferentes parametros tienden todas a un mismo punto, esto  es el reposo, por eso todas tienden a $V=0$.
 
