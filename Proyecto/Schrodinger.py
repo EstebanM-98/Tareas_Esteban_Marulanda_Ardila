@@ -20,11 +20,11 @@ class WaveFunction:
         self.m=m
         self.potential=f(x)
         self.hbar=hbar
-        self.h = self.domin[1]-self.domin[0] # Should be equal to 2*np.pi/(N-1)
+        self.h = self.domin[1]-self.domin[0] )
         self.Mdd = 1./(self.h*self.h)*(np.diag(np.ones(len(self.domin)-1),-1) -2* np.diag(np.ones(len(self.domin)),0) + np.diag(np.ones(len(self.domin)-1),1))
         self.H = -(hbar*hbar)/(2.0*m)*self.Mdd + np.diag(self.potential) 
-        self.E, self.psiT = np.linalg.eigh(self.H) # This computes the eigen values and eigenvectors
-        self.psi = np.transpose(self.psiT)   # We take the transpose of psiT to the wavefunction vectors can accessed as psi[n]
+        self.E, self.psiT = np.linalg.eigh(self.H) 
+        self.psi = np.transpose(self.psiT)   
         
     def plot(self): #Grafico del potencial
         return plt.plot(self.domin,self.potential)
