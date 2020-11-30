@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.linalg as scl
@@ -59,7 +65,7 @@ class WaveFunction:
         y=0
 
         for j in range(0,4):
-            y+=self.psi[j]*exp(-1j*self.E[j]*t)
+            y+=self.psi[j]*np.exp(-1j*self.E[j]*t)
         plt.xlim(-b,b)
         plt.title('Modulo cuadrado de combinación lineal de funciones de onda')
         plt.xlabel('$x$')
@@ -79,15 +85,15 @@ class WaveFunction:
         def animate(i):
             y=0
             for j in range(0,4):
-                y+=self.psi[j]*cos(self.E[j]*i)
-            line.set_data(z, 0.5*y)
+                y+=self.psi[j]*np.cos(self.E[j]*i)
+            line.set_data(self.domin, 0.5*y)
             return line,
 
         anim = FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=40, blit=True)
 
 
-        anim.save('sine_wave1.gif', writer='imagemagick')
+        anim.save('Combinación_Ani.gif', writer='imagemagick')
     
     
     
@@ -103,8 +109,8 @@ class WaveFunction:
         def animate(i):
             y=0
             for j in range(0,4):
-                y+=self.psi[j]*exp(-1j*self.E[j]*i)
-                line.set_data(z, 0.5*abs(y)**2)
+                y+=self.psi[j]*np.exp(-1j*self.E[j]*i)
+                line.set_data(self.domin, 0.5*abs(y)**2)
             return line,
 
         anim = FuncAnimation(fig, animate, init_func=init,
@@ -122,3 +128,10 @@ class WaveFunction:
     
         
         
+
+
+# In[ ]:
+
+
+
+
