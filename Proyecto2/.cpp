@@ -1,2 +1,0 @@
-ajajajjajjaja
-bayron
