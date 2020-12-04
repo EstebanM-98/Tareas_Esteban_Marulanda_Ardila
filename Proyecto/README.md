@@ -1,1 +1,1 @@
-asdas
+El archivo Proyecto_1_FC(1).pdf contiene el informe de lo desarrollado, el programa Schrodinger(2).py contiene la clase desarrollada. Finalmente el archivo QM.pynb es un notebook de jupyter donde esta todo lo desarrollado en el proyecto, los otros archivos restantes son los gifs correspondientes a las animaciones.
