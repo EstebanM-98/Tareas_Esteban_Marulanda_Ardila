@@ -73,8 +73,8 @@ print('el ángulo entre b y c es:',m.acos((b*c)/(b.magnitud*c.magnitud))*180/np.
 
 vector_esfericas=vector.VectorPolar(3,np.pi/2,np.pi/2) #Vector en esfericas cuya magnitud debería ser 3, ya que en cartesianas este vector representa (0,3,0)
 vector_esfericas1=vector.VectorPolar(2,np.pi/2,0) ##Vector en esfericas cuya magnitud debería ser 4, ya que r=4,ya que en cartesianas este vector representa (2,0,0)
-print(vector_esfericas.magnitud) #Verificación
-print(vector_esfericas1.magnitud) #Verificación1
+print('la magnitud del primer vector es:',vector_esfericas.magnitud) #Verificación
+print('la magnitud del segundo vector es:',vector_esfericas1.magnitud) #Verificación1
 
 
 # In[25]:
